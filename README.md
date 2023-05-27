@@ -1,4 +1,4 @@
-# 入园奶官网
+# 官网模板
 
 - nuxt3 + pinia + axios + vueuse + tailwind + view-ui-plus + wowjs
 - Nuxt路由基于vue-router，根据文件名从pages/目录中创建的每个组件生成路由（也可手动配置，没必要）。页面文件创建请严格按照nuxt命名约定来创建。
