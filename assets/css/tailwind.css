@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 单行省略号 */
+.single-line-ellipsis {
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 超二行省略号 */
+.multiline-two-ellipsis {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* 超三行省略号 */
+.multiline-ellipsis {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    @apply h-[6px] w-[6px] bg-gray-200 dark:bg-[#202124];
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-200 dark:bg-[#202124];
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-200 dark:bg-[#202124];
+}
